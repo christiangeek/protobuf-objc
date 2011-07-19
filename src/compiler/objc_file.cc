@@ -175,7 +175,7 @@ namespace google { namespace protobuf { namespace compiler {namespace objectivec
     }
 
     printer->Print(
-      "extensionRegistry = [registry retain];\n");
+      "extensionRegistry = registry;\n");
 
     printer->Outdent();
     printer->Outdent();
